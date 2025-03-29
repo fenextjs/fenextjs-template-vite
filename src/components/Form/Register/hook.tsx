@@ -1,7 +1,7 @@
 import { env_log, sleep, useAlert, useData, useNotification } from 'fenextjs';
 import { IFormRegister } from './interface';
 import { FormRegisterValidator } from './validator';
-import { useRouter } from 'next/router';
+import { useRouter } from 'fenextjs';
 import { URL } from '@/url';
 
 export interface useFormRegisterProps {

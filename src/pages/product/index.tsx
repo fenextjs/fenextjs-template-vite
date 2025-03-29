@@ -50,4 +50,3 @@ export const PageProduct = () => {
     );
 };
 
-export default PageProduct;

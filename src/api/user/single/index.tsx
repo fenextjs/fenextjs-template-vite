@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'fenextjs';
 import { useQueryUser } from '../query';
 
 export interface useSingleUserProps {}

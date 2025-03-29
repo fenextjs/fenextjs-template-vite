@@ -8,5 +8,3 @@ export const PageProductCreate = () => {
         </>
     );
 };
-
-export default PageProductCreate;

@@ -50,4 +50,3 @@ export const PageSell = () => {
     );
 };
 
-export default PageSell;

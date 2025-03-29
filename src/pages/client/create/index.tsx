@@ -8,5 +8,3 @@ export const PageClientCreate = () => {
         </>
     );
 };
-
-export default PageClientCreate;

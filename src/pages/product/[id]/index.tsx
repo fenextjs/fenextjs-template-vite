@@ -51,4 +51,3 @@ export const PageProductSingle = () => {
     );
 };
 
-export default PageProductSingle;

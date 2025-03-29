@@ -1,12 +1,10 @@
 'use client';
 import { LayoutDashboard } from '@/layout/Dashboard';
 
-export const PageProductCreate = () => {
+export const PageSellCreate = () => {
     return (
         <>
             <LayoutDashboard></LayoutDashboard>
         </>
     );
 };
-
-export default PageProductCreate;

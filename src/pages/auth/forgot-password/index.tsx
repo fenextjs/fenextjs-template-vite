@@ -1,6 +1,6 @@
 import { FormForgotPassword } from '@/components/Form/ForgotPassword';
+import { Head } from '@/components/Head';
 import { LayoutLogin } from '@/layout/Login';
-import Head from 'next/head';
 
 export const PageForgotPassword = () => {
     return (
@@ -15,4 +15,3 @@ export const PageForgotPassword = () => {
     );
 };
 
-export default PageForgotPassword;

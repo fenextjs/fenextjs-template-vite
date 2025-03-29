@@ -1,6 +1,6 @@
 import { FormRegister } from '@/components/Form/Register';
 import { LayoutLogin } from '@/layout/Login';
-import Head from 'next/head';
+import { Head } from '@/components/Head';
 
 export const PageRegister = () => {
     return (
@@ -14,5 +14,3 @@ export const PageRegister = () => {
         </>
     );
 };
-
-export default PageRegister;

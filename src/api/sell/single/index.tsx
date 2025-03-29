@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'fenextjs';
 import { useQuerySell } from '../query';
 
 export interface useSingleSellProps {}

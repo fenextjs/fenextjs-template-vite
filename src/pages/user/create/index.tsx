@@ -8,5 +8,3 @@ export const PageUserCreate = () => {
         </>
     );
 };
-
-export default PageUserCreate;

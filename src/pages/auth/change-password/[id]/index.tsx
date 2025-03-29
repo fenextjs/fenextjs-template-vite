@@ -1,7 +1,7 @@
 import { FormChangePassword } from '@/components/Form/ChangePassword';
+import { Head } from '@/components/Head';
 import { LayoutLogin } from '@/layout/Login';
-import Head from 'next/head';
-import { useRouter } from 'next/router';
+import { useRouter } from 'fenextjs';
 
 export const PageChangePassword = () => {
     const router = useRouter();
@@ -26,4 +26,3 @@ export const PageChangePassword = () => {
     );
 };
 
-export default PageChangePassword;

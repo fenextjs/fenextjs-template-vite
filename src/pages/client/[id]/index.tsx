@@ -44,5 +44,3 @@ export const PageClientSingle = () => {
         </>
     );
 };
-
-export default PageClientSingle;

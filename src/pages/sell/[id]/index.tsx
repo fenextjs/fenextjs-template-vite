@@ -78,5 +78,3 @@ export const PageSellSingle = () => {
         </>
     );
 };
-
-export default PageSellSingle;

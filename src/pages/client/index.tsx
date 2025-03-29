@@ -47,5 +47,3 @@ export const PageClient = () => {
         </>
     );
 };
-
-export default PageClient;
