@@ -45,6 +45,7 @@ export function AppRouter() {
     if (!isValidUser) {
         return (
             <Router>
+                <Route key={"/"} path={"/"} component={PageLogin} />
                 <Route key={"/:id"} path={"/:id"} component={PageLogin} />
                 {publicRoutes}
             </Router>
