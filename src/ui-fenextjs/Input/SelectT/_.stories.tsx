@@ -8,9 +8,9 @@ export default {
     component: InputSelectT,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<InputSelectTProps<any>>> = (args) => (
-    <InputSelectT {...args}>Test Children</InputSelectT>
-);
+const Profile: StoryFn<PropsWithChildren<InputSelectTProps<any>>> = (
+    args: any,
+) => <InputSelectT {...args}>Test Children</InputSelectT>;
 
 export const Index = Profile.bind({});
 const args: InputSelectTProps<any> = {

@@ -8,7 +8,7 @@ export default {
     component: Col2Auto,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<Col2AutoProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<Col2AutoProps>> = (args: any) => (
     <Col2Auto {...args}>Test Children</Col2Auto>
 );
 

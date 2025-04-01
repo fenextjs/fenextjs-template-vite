@@ -8,7 +8,7 @@ export default {
     component: InputPassword,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<InputPasswordProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<InputPasswordProps>> = (args: any) => (
     <InputPassword {...args}>Test Children</InputPassword>
 );
 

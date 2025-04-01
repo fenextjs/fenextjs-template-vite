@@ -8,9 +8,9 @@ export default {
     component: InputRadio,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<InputRadioProps<any>>> = (args) => (
-    <InputRadio {...args}>Test Children</InputRadio>
-);
+const Profile: StoryFn<PropsWithChildren<InputRadioProps<any>>> = (
+    args: any,
+) => <InputRadio {...args}>Test Children</InputRadio>;
 
 export const Index = Profile.bind({});
 const args: InputRadioProps<any> = {};

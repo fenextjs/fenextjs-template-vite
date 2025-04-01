@@ -8,7 +8,7 @@ export default {
     component: FormRegister,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<FormRegisterProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<FormRegisterProps>> = (args: any) => (
     <FormRegister {...args}>Test Children</FormRegister>
 );
 

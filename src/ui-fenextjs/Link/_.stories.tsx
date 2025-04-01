@@ -8,7 +8,7 @@ export default {
     component: Link,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<LinkProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<LinkProps>> = (args: any) => (
     <Link {...args}>Test Children</Link>
 );
 

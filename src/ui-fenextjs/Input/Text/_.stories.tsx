@@ -8,7 +8,7 @@ export default {
     component: InputText,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<InputTextProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<InputTextProps>> = (args: any) => (
     <InputText {...args}>Test Children</InputText>
 );
 

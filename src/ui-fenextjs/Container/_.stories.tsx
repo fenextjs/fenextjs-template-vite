@@ -8,7 +8,7 @@ export default {
     component: Container,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<ContainerProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<ContainerProps>> = (args: any) => (
     <Container {...args}>Test Children</Container>
 );
 

@@ -8,7 +8,7 @@ export default {
     component: FenextjsInfo,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<FenextjsInfoProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<FenextjsInfoProps>> = (args: any) => (
     <FenextjsInfo {...args}>Test Children</FenextjsInfo>
 );
 

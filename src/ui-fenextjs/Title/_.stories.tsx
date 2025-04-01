@@ -8,7 +8,7 @@ export default {
     component: Title,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<TitleProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<TitleProps>> = (args: any) => (
     <Title {...args}>Test Children</Title>
 );
 

@@ -8,7 +8,7 @@ export default {
     component: Cols,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<ColsProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<ColsProps>> = (args: any) => (
     <Cols {...args}>Test Children</Cols>
 );
 

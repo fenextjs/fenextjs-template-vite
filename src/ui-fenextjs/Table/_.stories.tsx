@@ -8,7 +8,7 @@ export default {
     component: Table,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<TableProps<any>>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<TableProps<any>>> = (args: any) => (
     <Table {...args}>Test Children</Table>
 );
 

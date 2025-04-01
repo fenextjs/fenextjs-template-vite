@@ -8,9 +8,9 @@ export default {
     component: FormChangePassword,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<FormChangePasswordProps>> = (args) => (
-    <FormChangePassword {...args}>Test Children</FormChangePassword>
-);
+const Profile: StoryFn<PropsWithChildren<FormChangePasswordProps>> = (
+    args: any,
+) => <FormChangePassword {...args}>Test Children</FormChangePassword>;
 
 export const Index = Profile.bind({});
 const args: FormChangePasswordProps = {};

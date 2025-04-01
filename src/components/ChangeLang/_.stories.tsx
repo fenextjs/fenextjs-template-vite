@@ -8,7 +8,7 @@ export default {
     component: ChangeLang,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<ChangeLangProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<ChangeLangProps>> = (args: any) => (
     <ChangeLang {...args}>Test Children</ChangeLang>
 );
 

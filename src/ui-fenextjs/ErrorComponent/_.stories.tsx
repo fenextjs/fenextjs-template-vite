@@ -8,9 +8,9 @@ export default {
     component: ErrorComponent,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<ErrorComponentProps>> = (args) => (
-    <ErrorComponent {...args}>Test Children</ErrorComponent>
-);
+const Profile: StoryFn<PropsWithChildren<ErrorComponentProps>> = (
+    args: any,
+) => <ErrorComponent {...args}>Test Children</ErrorComponent>;
 
 export const Index = Profile.bind({});
 const args: ErrorComponentProps = {};

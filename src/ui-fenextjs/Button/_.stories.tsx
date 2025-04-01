@@ -8,7 +8,7 @@ export default {
     component: Button,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<ButtonProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<ButtonProps>> = (args: any) => (
     <Button {...args}>Test Children</Button>
 );
 

@@ -8,7 +8,7 @@ export default {
     component: Img,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<ImgProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<ImgProps>> = (args: any) => (
     <Img {...args} />
 );
 
