@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useUser } from '@/hook/useUser';
-import { Button } from '@/ui-fenextjs/Button';
-import { URL } from '@/url';
-import { Menu } from 'fenextjs';
+import { useUser } from "@/hook/useUser";
+import { Button } from "@/ui-fenextjs/Button";
+import { URL } from "@/url";
+import { Menu } from "fenextjs";
 
 export interface HeaderDashboardLeftProps {}
 
@@ -16,23 +16,23 @@ export const HeaderDashboardLeft = ({}: HeaderDashboardLeftProps) => {
                     <Menu
                         items={[
                             {
-                                text: 'Dashboard',
+                                text: "Dashboard",
                                 url: URL.home.index,
                             },
                             {
-                                text: 'Usuarios',
+                                text: "Usuarios",
                                 url: URL.user.index,
                             },
                             {
-                                text: 'Clientes',
+                                text: "Clientes",
                                 url: URL.client.index,
                             },
                             {
-                                text: 'Productos',
+                                text: "Productos",
                                 url: URL.product.index,
                             },
                             {
-                                text: 'Ventas',
+                                text: "Ventas",
                                 url: URL.sell.index,
                             },
                         ]}

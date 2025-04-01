@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import { GridCols } from 'fenextjs';
+import { ReactNode } from "react";
+import { GridCols } from "fenextjs";
 
 export interface Col2AutoProps {
     children?: ReactNode;

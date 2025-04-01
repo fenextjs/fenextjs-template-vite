@@ -1,5 +1,5 @@
-'use client';
-import { LayoutDashboard } from '@/layout/Dashboard';
+"use client";
+import { LayoutDashboard } from "@/layout/Dashboard";
 
 export const PageSellCreate = () => {
     return (

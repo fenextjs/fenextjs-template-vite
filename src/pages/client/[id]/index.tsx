@@ -1,13 +1,13 @@
-'use client';
-import { useSingleClient } from '@/api/client/single';
-import { Col2Auto } from '@/components/Col2Auto';
-import { LayoutDashboard } from '@/layout/Dashboard';
-import { LayoutSimple } from '@/layout/Simple';
-import { parseDateTimeFormat_DD_MM_YY } from '@/parse/Dates';
-import { parseStatus } from '@/parse/Status';
-import { Link } from '@/ui-fenextjs/Link';
-import { Text } from '@/ui-fenextjs/Text';
-import { Title } from '@/ui-fenextjs/Title';
+"use client";
+import { useSingleClient } from "@/api/client/single";
+import { Col2Auto } from "@/components/Col2Auto";
+import { LayoutDashboard } from "@/layout/Dashboard";
+import { LayoutSimple } from "@/layout/Simple";
+import { parseDateTimeFormat_DD_MM_YY } from "@/parse/Dates";
+import { parseStatus } from "@/parse/Status";
+import { Link } from "@/ui-fenextjs/Link";
+import { Text } from "@/ui-fenextjs/Text";
+import { Title } from "@/ui-fenextjs/Title";
 
 export const PageClientSingle = () => {
     const { data, isLoading, error } = useSingleClient({});

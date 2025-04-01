@@ -1,7 +1,7 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
-import { ChangeLang,ChangeLangProps } from "./index";
+import { ChangeLang, ChangeLangProps } from "./index";
 
 export default {
     title: "Component/ChangeLang",
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<ChangeLangProps>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : ChangeLangProps = {
-    
-}
-Index.args = args
+const args: ChangeLangProps = {};
+Index.args = args;

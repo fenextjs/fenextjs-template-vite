@@ -1,6 +1,6 @@
-import { API_URL } from '@/env';
-import { IStatus } from '@/interface/status';
-import { IApiRespond, useApiMutation, useNotification } from 'fenextjs';
+import { API_URL } from "@/env";
+import { IStatus } from "@/interface/status";
+import { IApiRespond, useApiMutation, useNotification } from "fenextjs";
 
 export interface useUpdateClientInputProps {
     ids: string[];
@@ -12,20 +12,20 @@ export const useUpdateClient = ({}: useUpdateClientProps) => {
     const { pop } = useNotification({});
     return useApiMutation<useUpdateClientInputProps, IApiRespond<unknown>>({
         url: `${API_URL}/api/client/update`,
-        key: 'client',
+        key: "client",
         options: {
-            method: 'PATCH',
+            method: "PATCH",
         },
         onSuccess: () => {
             pop({
-                message: 'Clientes Actualizados',
-                type: 'OK',
+                message: "Clientes Actualizados",
+                type: "OK",
             });
         },
         onError: (error) => {
             pop({
                 message: error?.message,
-                type: 'ERROR',
+                type: "ERROR",
             });
         },
     });

@@ -5,12 +5,12 @@ import {
     useData,
     useNotification,
     useRouter,
-} from 'fenextjs';
-import { IFormLogin } from './interface';
-import { FormLoginValidator } from './validator';
-import { useUser, useUserDataProps } from '@/hook/useUser';
-import { useApiLogin } from '@/api/auth/login';
-import { URL } from '@/url';
+} from "fenextjs";
+import { IFormLogin } from "./interface";
+import { FormLoginValidator } from "./validator";
+import { useUser, useUserDataProps } from "@/hook/useUser";
+import { useApiLogin } from "@/api/auth/login";
+import { URL } from "@/url";
 
 export interface useFormLoginProps {
     defaultValue?: IFormLogin;
@@ -34,15 +34,15 @@ export const useFormLogin = ({ defaultValue }: useFormLoginProps) => {
         onBeforeSubmitData: ({ isValid }) => {
             if (isValid != true) {
                 setAlert({
-                    message: isValid?.msg ?? isValid?.message ?? '',
-                    type: 'WARNING',
+                    message: isValid?.msg ?? isValid?.message ?? "",
+                    type: "WARNING",
                 });
             }
         },
         onAfterSubmitDataOk: ({ result }) => {
             pop({
-                message: 'Login exitoso',
-                type: 'OK',
+                message: "Login exitoso",
+                type: "OK",
             });
             onClearAlert();
             onLogin(result.data);
@@ -52,8 +52,8 @@ export const useFormLogin = ({ defaultValue }: useFormLoginProps) => {
         },
         onAfterSubmitDataError: () => {
             setAlert({
-                message: 'Login fallido',
-                type: 'ERROR',
+                message: "Login fallido",
+                type: "ERROR",
             });
         },
     });

@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { FenextjsInfo, FenextjsInfoProps } from "./index";
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<FenextjsInfoProps>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : FenextjsInfoProps = {
-    
-}
-Index.args = args
+const args: FenextjsInfoProps = {};
+Index.args = args;

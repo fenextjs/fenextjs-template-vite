@@ -1,5 +1,5 @@
-import { useFilterCustomDataProps } from '@/hook/useFilter';
-import { PaginationDataProps, useFilterDataProps } from 'fenextjs';
+import { useFilterCustomDataProps } from "@/hook/useFilter";
+import { PaginationDataProps, useFilterDataProps } from "fenextjs";
 
 export interface IApiResultTable<T> {
     count: number;

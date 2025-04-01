@@ -1,16 +1,16 @@
-'use client';
-import { useSingleSell } from '@/api/sell/single';
-import { Col2Auto } from '@/components/Col2Auto';
-import { LayoutDashboard } from '@/layout/Dashboard';
-import { LayoutSimple } from '@/layout/Simple';
-import { parseDateTimeFormat_DD_MM_YY } from '@/parse/Dates';
-import { parseStatus, parseStatusPay } from '@/parse/Status';
-import { TableProduct } from '@/table/product';
-import { Link } from '@/ui-fenextjs/Link';
-import { Text } from '@/ui-fenextjs/Text';
-import { Title } from '@/ui-fenextjs/Title';
-import { URL } from '@/url';
-import { parseNumberCount } from 'fenextjs';
+"use client";
+import { useSingleSell } from "@/api/sell/single";
+import { Col2Auto } from "@/components/Col2Auto";
+import { LayoutDashboard } from "@/layout/Dashboard";
+import { LayoutSimple } from "@/layout/Simple";
+import { parseDateTimeFormat_DD_MM_YY } from "@/parse/Dates";
+import { parseStatus, parseStatusPay } from "@/parse/Status";
+import { TableProduct } from "@/table/product";
+import { Link } from "@/ui-fenextjs/Link";
+import { Text } from "@/ui-fenextjs/Text";
+import { Title } from "@/ui-fenextjs/Title";
+import { URL } from "@/url";
+import { parseNumberCount } from "fenextjs";
 
 export const PageSellSingle = () => {
     const { data, isLoading, error } = useSingleSell({});
@@ -60,11 +60,11 @@ export const PageSellSingle = () => {
                         nItems={data?.products?.length}
                         extraHeader={[
                             {
-                                id: 'id',
-                                th: 'Cantidad',
+                                id: "id",
+                                th: "Cantidad",
                                 parse: (product) => {
                                     return (
-                                        'x' +
+                                        "x" +
                                         parseNumberCount(
                                             (product as any)?.count,
                                         )

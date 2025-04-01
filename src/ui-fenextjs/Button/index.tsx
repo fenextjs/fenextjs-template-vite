@@ -1,12 +1,11 @@
-import React from 'react';
 import {
     Button as FenextjsButton,
     ButtonProps as FenextjsButtonProps,
-} from 'fenextjs';
-import { useLang } from '@/languages';
+} from "fenextjs";
+import { useLang } from "@/languages";
 
 export interface ButtonProps extends FenextjsButtonProps {}
-export const Button = ({ children, className = '', ...props }: ButtonProps) => {
+export const Button = ({ children, className = "", ...props }: ButtonProps) => {
     const { onTranslate } = useLang();
     return (
         <FenextjsButton

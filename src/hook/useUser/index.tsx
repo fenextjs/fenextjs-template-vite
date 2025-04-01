@@ -1,5 +1,5 @@
 // import { URL } from '@/url';
-import { ImgProps, useUser as useUserFenextjs } from 'fenextjs';
+import { ImgProps, useUser as useUserFenextjs } from "fenextjs";
 
 export interface useUserDataProps {
     id: string;

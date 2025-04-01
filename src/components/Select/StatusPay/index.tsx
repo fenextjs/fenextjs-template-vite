@@ -1,9 +1,9 @@
-import { IStatusPay } from '@/interface/status';
-import { parseStatusPay } from '@/parse/Status';
-import { InputSelectT, InputSelectTProps } from '@/ui-fenextjs/Input/SelectT';
+import { IStatusPay } from "@/interface/status";
+import { parseStatusPay } from "@/parse/Status";
+import { InputSelectT, InputSelectTProps } from "@/ui-fenextjs/Input/SelectT";
 
 export interface InputSelectStatusPayProps
-    extends Omit<InputSelectTProps<IStatusPay>, 'onParse' | 'options'> {}
+    extends Omit<InputSelectTProps<IStatusPay>, "onParse" | "options"> {}
 
 export const InputSelectStatusPay = ({
     ...props
@@ -14,7 +14,7 @@ export const InputSelectStatusPay = ({
             options={Object.values(IStatusPay)}
             onParse={(status) => {
                 return {
-                    id: status ?? '',
+                    id: status ?? "",
                     text: parseStatusPay(status),
                     data: status,
                 };

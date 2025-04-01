@@ -1,6 +1,6 @@
-import { ErrorComponent } from '@/ui-fenextjs/ErrorComponent';
-import { ErrorFenextjs, Loader } from 'fenextjs';
-import { ReactNode } from 'react';
+import { ErrorComponent } from "@/ui-fenextjs/ErrorComponent";
+import { ErrorFenextjs, Loader } from "fenextjs";
+import { ReactNode } from "react";
 
 export interface LayoutSimpleProps {
     loader?: boolean;

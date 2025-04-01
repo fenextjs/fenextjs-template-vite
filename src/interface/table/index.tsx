@@ -1,4 +1,4 @@
-import { ErrorFenextjs } from 'fenextjs';
+import { ErrorFenextjs } from "fenextjs";
 
 export interface ITable<T> {
     items?: T[];

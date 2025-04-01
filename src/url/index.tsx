@@ -1,40 +1,40 @@
 export const URL = {
     auth: {
         login: {
-            index: '/auth/login',
+            index: "/auth/login",
         },
         register: {
-            index: '/auth/register',
+            index: "/auth/register",
         },
-        'forgot-password': {
-            index: '/auth/forgot-password',
+        "forgot-password": {
+            index: "/auth/forgot-password",
         },
     },
     home: {
-        index: '/',
+        index: "/",
     },
     user: {
-        index: '/user/',
+        index: "/user/",
         create: {
-            index: '/user/create',
+            index: "/user/create",
         },
     },
     client: {
-        index: '/client/',
+        index: "/client/",
         create: {
-            index: '/client/create',
+            index: "/client/create",
         },
     },
     product: {
-        index: '/product/',
+        index: "/product/",
         create: {
-            index: '/product/create',
+            index: "/product/create",
         },
     },
     sell: {
-        index: '/sell/',
+        index: "/sell/",
         create: {
-            index: '/sell/create',
+            index: "/sell/create",
         },
     },
 };

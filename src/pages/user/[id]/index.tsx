@@ -1,14 +1,14 @@
-'use client';
-import { useSingleUser } from '@/api/user/single';
-import { Col2Auto } from '@/components/Col2Auto';
-import { LayoutDashboard } from '@/layout/Dashboard';
-import { LayoutSimple } from '@/layout/Simple';
-import { parseDateTimeFormat_DD_MM_YY } from '@/parse/Dates';
-import { parseRole } from '@/parse/Role';
-import { parseStatus } from '@/parse/Status';
-import { Link } from '@/ui-fenextjs/Link';
-import { Text } from '@/ui-fenextjs/Text';
-import { Title } from '@/ui-fenextjs/Title';
+"use client";
+import { useSingleUser } from "@/api/user/single";
+import { Col2Auto } from "@/components/Col2Auto";
+import { LayoutDashboard } from "@/layout/Dashboard";
+import { LayoutSimple } from "@/layout/Simple";
+import { parseDateTimeFormat_DD_MM_YY } from "@/parse/Dates";
+import { parseRole } from "@/parse/Role";
+import { parseStatus } from "@/parse/Status";
+import { Link } from "@/ui-fenextjs/Link";
+import { Text } from "@/ui-fenextjs/Text";
+import { Title } from "@/ui-fenextjs/Title";
 
 export const PageUserSingle = () => {
     const { data, isLoading, error } = useSingleUser({});
@@ -47,4 +47,3 @@ export const PageUserSingle = () => {
         </>
     );
 };
-

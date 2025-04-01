@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { Table, TableProps } from "./index";
@@ -13,8 +13,8 @@ const Profile: StoryFn<PropsWithChildren<TableProps<any>>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : TableProps<any> = {
-    header:[],
-    name:"Table"
-}
-Index.args = args
+const args: TableProps<any> = {
+    header: [],
+    name: "Table",
+};
+Index.args = args;

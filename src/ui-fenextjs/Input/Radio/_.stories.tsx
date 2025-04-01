@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { InputRadio, InputRadioProps } from "./index";
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<InputRadioProps<any>>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : InputRadioProps<any> = {
-    
-}
-Index.args = args
+const args: InputRadioProps<any> = {};
+Index.args = args;

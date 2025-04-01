@@ -1,22 +1,22 @@
-import { useUpdateProduct } from '@/api/product/update';
-import { IProduct } from '@/interface/product';
-import { IStatus } from '@/interface/status';
-import { ITable } from '@/interface/table';
-import { parseDateTimeFormat_DD_MM_YY } from '@/parse/Dates';
-import { parseStatus } from '@/parse/Status';
-import { Button } from '@/ui-fenextjs/Button';
-import { Img } from '@/ui-fenextjs/Img';
-import { Link } from '@/ui-fenextjs/Link';
-import { Table } from '@/ui-fenextjs/Table';
-import { Text } from '@/ui-fenextjs/Text';
-import { URL } from '@/url';
+import { useUpdateProduct } from "@/api/product/update";
+import { IProduct } from "@/interface/product";
+import { IStatus } from "@/interface/status";
+import { ITable } from "@/interface/table";
+import { parseDateTimeFormat_DD_MM_YY } from "@/parse/Dates";
+import { parseStatus } from "@/parse/Status";
+import { Button } from "@/ui-fenextjs/Button";
+import { Img } from "@/ui-fenextjs/Img";
+import { Link } from "@/ui-fenextjs/Link";
+import { Table } from "@/ui-fenextjs/Table";
+import { Text } from "@/ui-fenextjs/Text";
+import { URL } from "@/url";
 import {
     parseNumberCount,
     SvgCheck,
     SvgClose,
     SvgTrash,
     TableHeader,
-} from 'fenextjs';
+} from "fenextjs";
 
 export interface TableProductProps extends ITable<IProduct> {
     extraHeader?: TableHeader<IProduct>;
@@ -96,8 +96,8 @@ export const TableProduct = ({
             }}
             header={[
                 {
-                    id: 'id',
-                    th: 'ID',
+                    id: "id",
+                    th: "ID",
                     parse: (product) => {
                         return (
                             <Link
@@ -110,8 +110,8 @@ export const TableProduct = ({
                     },
                 },
                 {
-                    id: 'id',
-                    th: 'Imagen',
+                    id: "id",
+                    th: "Imagen",
                     parse: (product) => {
                         return (
                             <Link
@@ -119,7 +119,7 @@ export const TableProduct = ({
                                 href={URL.product.index + product.id}
                             >
                                 <Img
-                                    src={product?.image ?? ''}
+                                    src={product?.image ?? ""}
                                     className="img-table"
                                 />
                             </Link>
@@ -127,8 +127,8 @@ export const TableProduct = ({
                     },
                 },
                 {
-                    id: 'name',
-                    th: 'Nombre',
+                    id: "name",
+                    th: "Nombre",
                     parse: (product) => {
                         return (
                             <Link
@@ -141,15 +141,15 @@ export const TableProduct = ({
                     },
                 },
                 {
-                    id: 'price',
-                    th: 'Precio',
+                    id: "price",
+                    th: "Precio",
                     parse: (product) => {
-                        return '$' + parseNumberCount(product?.price);
+                        return "$" + parseNumberCount(product?.price);
                     },
                 },
                 {
-                    id: 'description',
-                    th: 'Descripcion',
+                    id: "description",
+                    th: "Descripcion",
                     parse: (product) => {
                         return (
                             <Text useT={false} className="text-table">
@@ -159,22 +159,22 @@ export const TableProduct = ({
                     },
                 },
                 {
-                    id: 'status',
-                    th: 'Estatus',
+                    id: "status",
+                    th: "Estatus",
                     parse: (product) => {
                         return parseStatus(product?.status);
                     },
                 },
                 {
-                    id: 'createdAt',
-                    th: 'Fecha de Creacion',
+                    id: "createdAt",
+                    th: "Fecha de Creacion",
                     parse: (product) => {
                         return parseDateTimeFormat_DD_MM_YY(product?.createdAt);
                     },
                 },
                 {
-                    id: 'updatedAt',
-                    th: 'Fecha de Actualizacion',
+                    id: "updatedAt",
+                    th: "Fecha de Actualizacion",
                     parse: (product) => {
                         return parseDateTimeFormat_DD_MM_YY(product?.updatedAt);
                     },

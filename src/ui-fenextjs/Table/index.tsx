@@ -1,16 +1,15 @@
-import React from 'react';
 import {
     Table as FenextjsTable,
     TableProps as FenextjsTableProps,
-} from 'fenextjs';
-import { useLang } from '@/languages';
-import { ITable } from '@/interface/table';
+} from "fenextjs";
+import { useLang } from "@/languages";
+import { ITable } from "@/interface/table";
 
 export interface TableProps<T>
-    extends Omit<FenextjsTableProps<T>, 'items'>,
+    extends Omit<FenextjsTableProps<T>, "items">,
         ITable<T> {}
 export const Table = <T,>({
-    classNameContent = '',
+    classNameContent = "",
     items,
     ...props
 }: TableProps<T>) => {

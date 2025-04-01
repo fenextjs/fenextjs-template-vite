@@ -1,10 +1,9 @@
-import React from 'react';
-import { useFormChangePassword, useFormChangePasswordProps } from './hook';
-import { Form } from '@/ui-fenextjs/Form';
-import { InputPassword } from '@/ui-fenextjs/Input';
-import { ErrorComponent } from '@/ui-fenextjs/ErrorComponent';
-import { Button } from '@/ui-fenextjs/Button';
-import { Title } from '@/ui-fenextjs/Title';
+import { useFormChangePassword, useFormChangePasswordProps } from "./hook";
+import { Form } from "@/ui-fenextjs/Form";
+import { InputPassword } from "@/ui-fenextjs/Input";
+import { ErrorComponent } from "@/ui-fenextjs/ErrorComponent";
+import { Button } from "@/ui-fenextjs/Button";
+import { Title } from "@/ui-fenextjs/Title";
 
 export interface FormChangePasswordProps extends useFormChangePasswordProps {}
 
@@ -27,14 +26,14 @@ export const FormChangePassword = ({ ...props }: FormChangePasswordProps) => {
                     placeholder="Contraseña"
                     defaultValue={data.password}
                     validator={validatorData?.password}
-                    onChange={onChangeData('password')}
+                    onChange={onChangeData("password")}
                 />
                 <InputPassword
                     label="Repite la Contraseña"
                     placeholder="Contraseña"
                     defaultValue={data.repeactPassword}
                     validator={validatorData?.repeactPassword}
-                    onChange={onChangeData('repeactPassword')}
+                    onChange={onChangeData("repeactPassword")}
                 />
                 {dataError && <ErrorComponent error={dataError} />}
 

@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { Col2Auto, Col2AutoProps } from "./index";
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<Col2AutoProps>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : Col2AutoProps = {
-    
-}
-Index.args = args
+const args: Col2AutoProps = {};
+Index.args = args;

@@ -1,6 +1,6 @@
-import { API_URL } from '@/env';
-import { IStatus } from '@/interface/status';
-import { IApiRespond, useApiMutation, useNotification } from 'fenextjs';
+import { API_URL } from "@/env";
+import { IStatus } from "@/interface/status";
+import { IApiRespond, useApiMutation, useNotification } from "fenextjs";
 
 export interface useUpdateProductInputProps {
     ids: string[];
@@ -12,20 +12,20 @@ export const useUpdateProduct = ({}: useUpdateProductProps) => {
     const { pop } = useNotification({});
     return useApiMutation<useUpdateProductInputProps, IApiRespond<unknown>>({
         url: `${API_URL}/api/product/update`,
-        key: 'product',
+        key: "product",
         options: {
-            method: 'PATCH',
+            method: "PATCH",
         },
         onSuccess: () => {
             pop({
-                message: 'Productos Actualizados',
-                type: 'OK',
+                message: "Productos Actualizados",
+                type: "OK",
             });
         },
         onError: (error) => {
             pop({
                 message: error?.message,
-                type: 'ERROR',
+                type: "ERROR",
             });
         },
     });

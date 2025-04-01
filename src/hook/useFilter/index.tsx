@@ -1,8 +1,8 @@
-import { IStatus, IStatusPay } from '@/interface/status';
+import { IStatus, IStatusPay } from "@/interface/status";
 import {
     useFilter as useFilterFenextjs,
     useFilterProps as useFilterFenextjsProps,
-} from 'fenextjs';
+} from "fenextjs";
 
 export interface useFilterCustomDataProps {
     status?: IStatus;

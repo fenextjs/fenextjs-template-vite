@@ -1,4 +1,4 @@
 export enum IRole {
-    ADMIN = 'ADMIN',
-    PRODUCTMANAGER = 'PRODUCTMANAGER',
+    ADMIN = "ADMIN",
+    PRODUCTMANAGER = "PRODUCTMANAGER",
 }

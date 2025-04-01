@@ -1,9 +1,9 @@
-import { IStatus } from '@/interface/status';
-import { parseStatus } from '@/parse/Status';
-import { InputSelectT, InputSelectTProps } from '@/ui-fenextjs/Input/SelectT';
+import { IStatus } from "@/interface/status";
+import { parseStatus } from "@/parse/Status";
+import { InputSelectT, InputSelectTProps } from "@/ui-fenextjs/Input/SelectT";
 
 export interface InputSelectStatusProps
-    extends Omit<InputSelectTProps<IStatus>, 'onParse' | 'options'> {}
+    extends Omit<InputSelectTProps<IStatus>, "onParse" | "options"> {}
 
 export const InputSelectStatus = ({ ...props }: InputSelectStatusProps) => {
     return (
@@ -12,7 +12,7 @@ export const InputSelectStatus = ({ ...props }: InputSelectStatusProps) => {
             options={Object.values(IStatus)}
             onParse={(status) => {
                 return {
-                    id: status ?? '',
+                    id: status ?? "",
                     text: parseStatus(status),
                     data: status,
                 };

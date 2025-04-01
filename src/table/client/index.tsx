@@ -1,14 +1,14 @@
-import { useUpdateClient } from '@/api/client/update';
-import { IClient } from '@/interface/client';
-import { IStatus } from '@/interface/status';
-import { ITable } from '@/interface/table';
-import { parseDateTimeFormat_DD_MM_YY } from '@/parse/Dates';
-import { parseStatus } from '@/parse/Status';
-import { Button } from '@/ui-fenextjs/Button';
-import { Link } from '@/ui-fenextjs/Link';
-import { Table } from '@/ui-fenextjs/Table';
-import { URL } from '@/url';
-import { SvgCheck, SvgClose, SvgTrash } from 'fenextjs';
+import { useUpdateClient } from "@/api/client/update";
+import { IClient } from "@/interface/client";
+import { IStatus } from "@/interface/status";
+import { ITable } from "@/interface/table";
+import { parseDateTimeFormat_DD_MM_YY } from "@/parse/Dates";
+import { parseStatus } from "@/parse/Status";
+import { Button } from "@/ui-fenextjs/Button";
+import { Link } from "@/ui-fenextjs/Link";
+import { Table } from "@/ui-fenextjs/Table";
+import { URL } from "@/url";
+import { SvgCheck, SvgClose, SvgTrash } from "fenextjs";
 
 export interface TableClientProps extends ITable<IClient> {}
 
@@ -83,8 +83,8 @@ export const TableClient = ({ ...props }: TableClientProps) => {
             }}
             header={[
                 {
-                    id: 'id',
-                    th: 'ID',
+                    id: "id",
+                    th: "ID",
                     parse: (client) => {
                         return (
                             <Link
@@ -97,8 +97,8 @@ export const TableClient = ({ ...props }: TableClientProps) => {
                     },
                 },
                 {
-                    id: 'name',
-                    th: 'Nombre',
+                    id: "name",
+                    th: "Nombre",
                     parse: (client) => {
                         return (
                             <Link
@@ -111,13 +111,13 @@ export const TableClient = ({ ...props }: TableClientProps) => {
                     },
                 },
                 {
-                    id: 'email',
-                    th: 'Correo',
+                    id: "email",
+                    th: "Correo",
                     parse: (client) => {
                         return (
                             <Link
                                 useT={false}
-                                href={'mailto:' + client.email}
+                                href={"mailto:" + client.email}
                                 target="_blank"
                             >
                                 {client?.email}
@@ -126,22 +126,22 @@ export const TableClient = ({ ...props }: TableClientProps) => {
                     },
                 },
                 {
-                    id: 'status',
-                    th: 'Estatus',
+                    id: "status",
+                    th: "Estatus",
                     parse: (client) => {
                         return parseStatus(client?.status);
                     },
                 },
                 {
-                    id: 'createdAt',
-                    th: 'Fecha de Creacion',
+                    id: "createdAt",
+                    th: "Fecha de Creacion",
                     parse: (client) => {
                         return parseDateTimeFormat_DD_MM_YY(client?.createdAt);
                     },
                 },
                 {
-                    id: 'updatedAt',
-                    th: 'Fecha de Actualizacion',
+                    id: "updatedAt",
+                    th: "Fecha de Actualizacion",
                     parse: (client) => {
                         return parseDateTimeFormat_DD_MM_YY(client?.updatedAt);
                     },

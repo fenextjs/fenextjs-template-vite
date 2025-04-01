@@ -1,10 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useLang } from '@/languages';
-import { Container } from '@/ui-fenextjs/Container';
-import { InputRadio } from '@/ui-fenextjs/Input';
-import { Img } from '@/ui-fenextjs/Img';
+import { useLang } from "@/languages";
+import { Container } from "@/ui-fenextjs/Container";
+import { InputRadio } from "@/ui-fenextjs/Input";
+import { Img } from "@/ui-fenextjs/Img";
 export interface ChangeLangProps {}
 
 export const ChangeLang = ({}: ChangeLangProps) => {
@@ -12,34 +11,34 @@ export const ChangeLang = ({}: ChangeLangProps) => {
     return (
         <>
             <Container className="change-lang">
-                <InputRadio<'es' | 'en'>
+                <InputRadio<"es" | "en">
                     defaultValue={{
-                        id: currentLang ?? 'es',
-                        data: currentLang ?? 'es',
-                        label: (currentLang ?? 'es')?.toUpperCase(),
+                        id: currentLang ?? "es",
+                        data: currentLang ?? "es",
+                        label: (currentLang ?? "es")?.toUpperCase(),
                     }}
                     items={[
                         {
-                            id: 'es',
-                            data: 'es',
+                            id: "es",
+                            data: "es",
                             label: (
                                 <>
                                     <Img
                                         src={
-                                            'https://country-state-city-nextjs.vercel.app/country/28_espana/img.png'
+                                            "https://country-state-city-nextjs.vercel.app/country/28_espana/img.png"
                                         }
                                     />
                                 </>
                             ),
                         },
                         {
-                            id: 'en',
-                            data: 'en',
+                            id: "en",
+                            data: "en",
                             label: (
                                 <>
                                     <Img
                                         src={
-                                            'https://country-state-city-nextjs.vercel.app/country/55_estados_unidos/img.png'
+                                            "https://country-state-city-nextjs.vercel.app/country/55_estados_unidos/img.png"
                                         }
                                     />
                                 </>

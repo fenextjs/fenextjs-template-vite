@@ -1,6 +1,6 @@
-import { useUser } from '@/hook/useUser';
-import {PageLogin} from '@/pages/auth/login';
-import { ReactNode } from 'react';
+import { useUser } from "@/hook/useUser";
+import { PageLogin } from "@/pages/auth/login";
+import { ReactNode } from "react";
 
 export interface LayoutAuthProps {
     children?: ReactNode;

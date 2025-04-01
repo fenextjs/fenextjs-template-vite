@@ -1,9 +1,9 @@
-import { HeaderDashboard } from '@/header/Dashboard';
-import { Container } from '@/ui-fenextjs/Container';
-import { LayoutGridMenuTopLeft } from 'fenextjs';
-import { ReactNode } from 'react';
-import { LayoutAuth } from '../Auth';
-import { HeaderDashboardLeft } from '@/header/DashboardLeft';
+import { HeaderDashboard } from "@/header/Dashboard";
+import { Container } from "@/ui-fenextjs/Container";
+import { LayoutGridMenuTopLeft } from "fenextjs";
+import { ReactNode } from "react";
+import { LayoutAuth } from "../Auth";
+import { HeaderDashboardLeft } from "@/header/DashboardLeft";
 
 export interface LayoutDashboardProps {
     children?: ReactNode;

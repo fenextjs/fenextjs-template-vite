@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { Img, ImgProps } from "./index";
@@ -9,11 +9,11 @@ export default {
 } as Meta;
 
 const Profile: StoryFn<PropsWithChildren<ImgProps>> = (args) => (
-    <Img {...args}/>
+    <Img {...args} />
 );
 
 export const Index = Profile.bind({});
-const args : ImgProps = {
-    src:""
-}
-Index.args = args
+const args: ImgProps = {
+    src: "",
+};
+Index.args = args;

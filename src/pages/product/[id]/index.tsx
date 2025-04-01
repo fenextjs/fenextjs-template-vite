@@ -1,14 +1,14 @@
-'use client';
-import { useSingleProduct } from '@/api/product/single';
-import { Col2Auto } from '@/components/Col2Auto';
-import { LayoutDashboard } from '@/layout/Dashboard';
-import { LayoutSimple } from '@/layout/Simple';
-import { parseDateTimeFormat_DD_MM_YY } from '@/parse/Dates';
-import { parseStatus } from '@/parse/Status';
-import { Img } from '@/ui-fenextjs/Img';
-import { Text } from '@/ui-fenextjs/Text';
-import { Title } from '@/ui-fenextjs/Title';
-import { parseNumberCount } from 'fenextjs';
+"use client";
+import { useSingleProduct } from "@/api/product/single";
+import { Col2Auto } from "@/components/Col2Auto";
+import { LayoutDashboard } from "@/layout/Dashboard";
+import { LayoutSimple } from "@/layout/Simple";
+import { parseDateTimeFormat_DD_MM_YY } from "@/parse/Dates";
+import { parseStatus } from "@/parse/Status";
+import { Img } from "@/ui-fenextjs/Img";
+import { Text } from "@/ui-fenextjs/Text";
+import { Title } from "@/ui-fenextjs/Title";
+import { parseNumberCount } from "fenextjs";
 
 export const PageProductSingle = () => {
     const { data, isLoading, error } = useSingleProduct({});
@@ -17,7 +17,7 @@ export const PageProductSingle = () => {
             <LayoutDashboard>
                 <LayoutSimple error={error?.error} loader={isLoading}>
                     <Col2Auto>
-                        <Img src={data?.image ?? ''} className="img-single" />
+                        <Img src={data?.image ?? ""} className="img-single" />
                         <Col2Auto>
                             <Title>Producto</Title>
                             <Title useT={false}>{data?.name}</Title>
@@ -50,4 +50,3 @@ export const PageProductSingle = () => {
         </>
     );
 };
-

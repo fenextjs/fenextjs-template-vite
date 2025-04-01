@@ -1,13 +1,12 @@
-import React from 'react';
 import {
     InputPassword as FenextjsInputPassword,
     InputPasswordProps as FenextjsInputPasswordProps,
-} from 'fenextjs';
-import { useLang } from '@/languages';
+} from "fenextjs";
+import { useLang } from "@/languages";
 
 export interface InputPasswordProps extends FenextjsInputPasswordProps {}
 export const InputPassword = ({
-    className = '',
+    className = "",
     ...props
 }: InputPasswordProps) => {
     const { onTranslate } = useLang();

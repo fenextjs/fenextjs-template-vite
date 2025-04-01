@@ -1,12 +1,12 @@
-import { FenextjsValidator } from 'fenextjs-validator';
-import { IFormForgotPassword } from './interface';
+import { FenextjsValidator } from "fenextjs-validator";
+import { IFormForgotPassword } from "./interface";
 
 export const FormForgotPasswordValidator =
     FenextjsValidator<IFormForgotPassword>()
-        .setName('FormForgotPassword')
+        .setName("FormForgotPassword")
         .isObject({
             email: FenextjsValidator()
-                .isString('Correo requerido')
-                .isEmail('Correo invalido')
-                .isRequired('Correo requerido'),
+                .isString("Correo requerido")
+                .isEmail("Correo invalido")
+                .isRequired("Correo requerido"),
         });

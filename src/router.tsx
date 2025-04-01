@@ -19,27 +19,87 @@ import { PageSellCreate } from "./pages/sell/create";
 
 export function AppRouter() {
     const privateRoutes = [
-        <Route key={URL.client.index} path={URL.client.index} component={PageClient} />,
-        <Route key={URL.client.index + ":id"} path={URL.client.index + ":id"} component={PageClientSingle} />,
-        <Route key={URL.client.create.index} path={URL.client.create.index} component={PageClientCreate} />,
+        <Route
+            key={URL.client.index}
+            path={URL.client.index}
+            component={PageClient}
+        />,
+        <Route
+            key={URL.client.index + ":id"}
+            path={URL.client.index + ":id"}
+            component={PageClientSingle}
+        />,
+        <Route
+            key={URL.client.create.index}
+            path={URL.client.create.index}
+            component={PageClientCreate}
+        />,
 
-        <Route key={URL.product.index} path={URL.product.index} component={PageProduct} />,
-        <Route key={URL.product.index + ":id"} path={URL.product.index + ":id"} component={PageProductSingle} />,
-        <Route key={URL.product.create.index} path={URL.product.create.index} component={PageProductCreate} />,
+        <Route
+            key={URL.product.index}
+            path={URL.product.index}
+            component={PageProduct}
+        />,
+        <Route
+            key={URL.product.index + ":id"}
+            path={URL.product.index + ":id"}
+            component={PageProductSingle}
+        />,
+        <Route
+            key={URL.product.create.index}
+            path={URL.product.create.index}
+            component={PageProductCreate}
+        />,
 
-        <Route key={URL.user.index} path={URL.user.index} component={PageUser} />,
-        <Route key={URL.user.index + ":id"} path={URL.user.index + ":id"} component={PageUserSingle} />,
-        <Route key={URL.user.create.index} path={URL.user.create.index} component={PageUserCreate} />,
+        <Route
+            key={URL.user.index}
+            path={URL.user.index}
+            component={PageUser}
+        />,
+        <Route
+            key={URL.user.index + ":id"}
+            path={URL.user.index + ":id"}
+            component={PageUserSingle}
+        />,
+        <Route
+            key={URL.user.create.index}
+            path={URL.user.create.index}
+            component={PageUserCreate}
+        />,
 
-        <Route key={URL.sell.index} path={URL.sell.index} component={PageSell} />,
-        <Route key={URL.sell.index + ":id"} path={URL.sell.index + ":id"} component={PageSellSingle} />,
-        <Route key={URL.sell.create.index} path={URL.sell.create.index} component={PageSellCreate} />,
+        <Route
+            key={URL.sell.index}
+            path={URL.sell.index}
+            component={PageSell}
+        />,
+        <Route
+            key={URL.sell.index + ":id"}
+            path={URL.sell.index + ":id"}
+            component={PageSellSingle}
+        />,
+        <Route
+            key={URL.sell.create.index}
+            path={URL.sell.create.index}
+            component={PageSellCreate}
+        />,
     ];
 
     const publicRoutes = [
-        <Route key={URL.auth.login.index} path={URL.auth.login.index} component={PageLogin} />,
-        <Route key={URL.auth.register.index} path={URL.auth.register.index} component={PageRegister} />,
-        <Route key={URL.auth["forgot-password"].index} path={URL.auth["forgot-password"].index} component={PageForgotPassword} />,
+        <Route
+            key={URL.auth.login.index}
+            path={URL.auth.login.index}
+            component={PageLogin}
+        />,
+        <Route
+            key={URL.auth.register.index}
+            path={URL.auth.register.index}
+            component={PageRegister}
+        />,
+        <Route
+            key={URL.auth["forgot-password"].index}
+            path={URL.auth["forgot-password"].index}
+            component={PageForgotPassword}
+        />,
     ];
     const { isValidUser } = useUser({});
     if (!isValidUser) {

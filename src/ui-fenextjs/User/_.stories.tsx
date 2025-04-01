@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { User, UserProps } from "./index";
@@ -8,12 +8,10 @@ export default {
     component: User,
 } as Meta;
 
-const Profile: StoryFn<PropsWithChildren<UserProps>> = (args) => (
+const Profile: StoryFn<PropsWithChildren<UserProps>> = (args: any) => (
     <User {...args}>Test Children</User>
 );
 
 export const Index = Profile.bind({});
-const args : UserProps = {
-    
-}
-Index.args = args
+const args: UserProps = {};
+Index.args = args;

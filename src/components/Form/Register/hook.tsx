@@ -1,8 +1,8 @@
-import { env_log, sleep, useAlert, useData, useNotification } from 'fenextjs';
-import { IFormRegister } from './interface';
-import { FormRegisterValidator } from './validator';
-import { useRouter } from 'fenextjs';
-import { URL } from '@/url';
+import { env_log, sleep, useAlert, useData, useNotification } from "fenextjs";
+import { IFormRegister } from "./interface";
+import { FormRegisterValidator } from "./validator";
+import { useRouter } from "fenextjs";
+import { URL } from "@/url";
 
 export interface useFormRegisterProps {
     defaultValue?: IFormRegister;
@@ -16,30 +16,30 @@ export const useFormRegister = ({ defaultValue }: useFormRegisterProps) => {
         validator: FormRegisterValidator,
         onSubmitData: async (data) => {
             env_log(data, {
-                name: 'DATA',
+                name: "DATA",
             });
             await sleep(2000);
         },
         onBeforeSubmitData: ({ isValid }) => {
             if (isValid != true) {
                 setAlert({
-                    message: isValid?.msg ?? isValid?.message ?? '',
-                    type: 'WARNING',
+                    message: isValid?.msg ?? isValid?.message ?? "",
+                    type: "WARNING",
                 });
             }
         },
         onAfterSubmitDataOk: () => {
             pop({
-                message: 'Register exitoso',
-                type: 'OK',
+                message: "Register exitoso",
+                type: "OK",
             });
             onClearAlert();
             router.push(URL.auth.login.index);
         },
         onAfterSubmitDataError: () => {
             setAlert({
-                message: 'Register fallido',
-                type: 'ERROR',
+                message: "Register fallido",
+                type: "ERROR",
             });
         },
     });

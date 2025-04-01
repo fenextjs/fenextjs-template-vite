@@ -1,4 +1,4 @@
-import { IStatus } from '../status';
+import { IStatus } from "../status";
 
 export interface IClient {
     id: string;

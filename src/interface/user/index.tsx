@@ -1,5 +1,5 @@
-import { IRole } from '../role';
-import { IStatus } from '../status';
+import { IRole } from "../role";
+import { IStatus } from "../status";
 
 export interface IUser {
     id: string;

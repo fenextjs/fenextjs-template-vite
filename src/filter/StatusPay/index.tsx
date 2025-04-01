@@ -1,7 +1,7 @@
-import { InputSelectStatusPay } from '@/components/Select/StatusPay';
-import { useFilter } from '@/hook/useFilter';
-import { usePagination } from 'fenextjs';
-import { useEffect } from 'react';
+import { InputSelectStatusPay } from "@/components/Select/StatusPay";
+import { useFilter } from "@/hook/useFilter";
+import { usePagination } from "fenextjs";
+import { useEffect } from "react";
 
 export interface FilterStatusPayProps {
     nameFilter?: string;
@@ -14,7 +14,7 @@ export const FilterStatusPay = ({ nameFilter }: FilterStatusPayProps) => {
     const { onChangeData, data, onDeleteData } = useFilter({});
 
     useEffect(() => {
-        onDeleteData('statusPay');
+        onDeleteData("statusPay");
     }, []);
 
     return (
@@ -23,8 +23,8 @@ export const FilterStatusPay = ({ nameFilter }: FilterStatusPayProps) => {
                 <InputSelectStatusPay
                     placeholder="Estado de Pago"
                     onChange={(status) => {
-                        onChangeData('statusPay')(status);
-                        onChangeDataPagination('page')(0);
+                        onChangeData("statusPay")(status);
+                        onChangeDataPagination("page")(0);
                     }}
                     defaultValue={data?.statusPay}
                 />

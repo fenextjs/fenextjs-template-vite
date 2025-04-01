@@ -1,12 +1,11 @@
-import React from 'react';
-import { useFormRegister, useFormRegisterProps } from './hook';
-import { Form } from '@/ui-fenextjs/Form';
-import { InputPassword, InputText } from '@/ui-fenextjs/Input';
-import { ErrorComponent } from '@/ui-fenextjs/ErrorComponent';
-import { Button } from '@/ui-fenextjs/Button';
-import { Title } from '@/ui-fenextjs/Title';
-import { Link } from '@/ui-fenextjs/Link';
-import { URL } from '@/url';
+import { useFormRegister, useFormRegisterProps } from "./hook";
+import { Form } from "@/ui-fenextjs/Form";
+import { InputPassword, InputText } from "@/ui-fenextjs/Input";
+import { ErrorComponent } from "@/ui-fenextjs/ErrorComponent";
+import { Button } from "@/ui-fenextjs/Button";
+import { Title } from "@/ui-fenextjs/Title";
+import { Link } from "@/ui-fenextjs/Link";
+import { URL } from "@/url";
 export interface FormRegisterProps extends useFormRegisterProps {}
 
 export const FormRegister = ({ ...props }: FormRegisterProps) => {
@@ -28,28 +27,28 @@ export const FormRegister = ({ ...props }: FormRegisterProps) => {
                     placeholder="Nombre"
                     defaultValue={data.name}
                     validator={validatorData?.name}
-                    onChange={onChangeData('name')}
+                    onChange={onChangeData("name")}
                 />
                 <InputText
                     label="Correo"
                     placeholder="Correo"
                     defaultValue={data.email}
                     validator={validatorData?.email}
-                    onChange={onChangeData('email')}
+                    onChange={onChangeData("email")}
                 />
                 <InputPassword
                     label="Contraseña"
                     placeholder="Contraseña"
                     defaultValue={data.password}
                     validator={validatorData?.password}
-                    onChange={onChangeData('password')}
+                    onChange={onChangeData("password")}
                 />
                 <InputPassword
                     label="Repite la Contraseña"
                     placeholder="Contraseña"
                     defaultValue={data.repeactPassword}
                     validator={validatorData?.repeactPassword}
-                    onChange={onChangeData('repeactPassword')}
+                    onChange={onChangeData("repeactPassword")}
                 />
                 {dataError && <ErrorComponent error={dataError} />}
 
@@ -67,7 +66,7 @@ export const FormRegister = ({ ...props }: FormRegisterProps) => {
                     <Link href={URL.auth.login.index}>Entrar</Link>
                 </div>
                 <div>
-                    <Link href={URL.auth['forgot-password'].index}>
+                    <Link href={URL.auth["forgot-password"].index}>
                         Olvidates la Contraseña
                     </Link>
                 </div>

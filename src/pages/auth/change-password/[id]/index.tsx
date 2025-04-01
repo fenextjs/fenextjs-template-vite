@@ -1,7 +1,7 @@
-import { FormChangePassword } from '@/components/Form/ChangePassword';
-import { Head } from '@/components/Head';
-import { LayoutLogin } from '@/layout/Login';
-import { useRouter } from 'fenextjs';
+import { FormChangePassword } from "@/components/Form/ChangePassword";
+import { Head } from "@/components/Head";
+import { LayoutLogin } from "@/layout/Login";
+import { useRouter } from "fenextjs";
 
 export const PageChangePassword = () => {
     const router = useRouter();
@@ -15,9 +15,9 @@ export const PageChangePassword = () => {
                 {router.isReady && (
                     <FormChangePassword
                         defaultValue={{
-                            token: `${router?.query?.id ?? ''}`,
-                            password: '',
-                            repeactPassword: '',
+                            token: `${router?.query?.id ?? ""}`,
+                            password: "",
+                            repeactPassword: "",
                         }}
                     />
                 )}
@@ -25,4 +25,3 @@ export const PageChangePassword = () => {
         </>
     );
 };
-

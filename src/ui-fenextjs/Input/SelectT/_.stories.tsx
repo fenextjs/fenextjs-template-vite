@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { InputSelectT, InputSelectTProps } from "./index";
@@ -13,13 +13,13 @@ const Profile: StoryFn<PropsWithChildren<InputSelectTProps<any>>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : InputSelectTProps<any> = {
-    onParse:(e)=>{
+const args: InputSelectTProps<any> = {
+    onParse: (e) => {
         return {
-            id:"",
-            text:"",
-        }
+            id: e,
+            text: "",
+        };
     },
-    options:[]
-}
-Index.args = args
+    options: [],
+};
+Index.args = args;

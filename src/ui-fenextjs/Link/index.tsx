@@ -1,9 +1,8 @@
-import React from 'react';
-import { Link as FenextjsLink, LinkProps as FenextjsLinkProps } from 'fenextjs';
-import { useLang } from '@/languages';
+import { Link as FenextjsLink, LinkProps as FenextjsLinkProps } from "fenextjs";
+import { useLang } from "@/languages";
 
 export interface LinkProps extends FenextjsLinkProps {}
-export const Link = ({ children, className = '', ...props }: LinkProps) => {
+export const Link = ({ children, className = "", ...props }: LinkProps) => {
     const { onTranslate } = useLang();
     return (
         <FenextjsLink

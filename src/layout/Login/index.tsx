@@ -1,8 +1,8 @@
-import { FenextjsInfo } from '@/components/FenextjsInfo';
-import { HeaderLogin } from '@/header/Login';
-import { Container } from '@/ui-fenextjs/Container';
-import { LayoutGridMenuTop } from 'fenextjs';
-import { ReactNode } from 'react';
+import { FenextjsInfo } from "@/components/FenextjsInfo";
+import { HeaderLogin } from "@/header/Login";
+import { Container } from "@/ui-fenextjs/Container";
+import { LayoutGridMenuTop } from "fenextjs";
+import { ReactNode } from "react";
 
 export interface LayoutLoginProps {
     children?: ReactNode;

@@ -1,16 +1,16 @@
-import { useUpdateSell } from '@/api/sell/update';
-import { ISell } from '@/interface/sell';
-import { IStatus } from '@/interface/status';
-import { ITable } from '@/interface/table';
-import { parseDateTimeFormat_DD_MM_YY } from '@/parse/Dates';
-import { parseStatus, parseStatusPay } from '@/parse/Status';
-import { Button } from '@/ui-fenextjs/Button';
-import { Link } from '@/ui-fenextjs/Link';
-import { Table } from '@/ui-fenextjs/Table';
-import { Text } from '@/ui-fenextjs/Text';
-import { URL } from '@/url';
-import { parseNumberCount, SvgCheck, SvgClose, SvgTrash } from 'fenextjs';
-import { TableProduct } from '../product';
+import { useUpdateSell } from "@/api/sell/update";
+import { ISell } from "@/interface/sell";
+import { IStatus } from "@/interface/status";
+import { ITable } from "@/interface/table";
+import { parseDateTimeFormat_DD_MM_YY } from "@/parse/Dates";
+import { parseStatus, parseStatusPay } from "@/parse/Status";
+import { Button } from "@/ui-fenextjs/Button";
+import { Link } from "@/ui-fenextjs/Link";
+import { Table } from "@/ui-fenextjs/Table";
+import { Text } from "@/ui-fenextjs/Text";
+import { URL } from "@/url";
+import { parseNumberCount, SvgCheck, SvgClose, SvgTrash } from "fenextjs";
+import { TableProduct } from "../product";
 
 export interface TableSellProps extends ITable<ISell> {}
 
@@ -85,8 +85,8 @@ export const TableSell = ({ ...props }: TableSellProps) => {
             }}
             header={[
                 {
-                    id: 'id',
-                    th: 'ID',
+                    id: "id",
+                    th: "ID",
                     parse: (sell) => {
                         return (
                             <Link useT={false} href={URL.sell.index + sell.id}>
@@ -96,8 +96,8 @@ export const TableSell = ({ ...props }: TableSellProps) => {
                     },
                 },
                 {
-                    id: 'client',
-                    th: 'Cliente',
+                    id: "client",
+                    th: "Cliente",
                     parse: (sell) => {
                         return (
                             <Link
@@ -111,29 +111,29 @@ export const TableSell = ({ ...props }: TableSellProps) => {
                 },
 
                 {
-                    id: 'total',
-                    th: 'Total',
+                    id: "total",
+                    th: "Total",
                     parse: (sell) => {
-                        return '$' + parseNumberCount(sell?.total);
+                        return "$" + parseNumberCount(sell?.total);
                     },
                 },
                 {
-                    id: 'status',
-                    th: 'Estatus',
+                    id: "status",
+                    th: "Estatus",
                     parse: (sell) => {
                         return parseStatus(sell?.status);
                     },
                 },
                 {
-                    id: 'statusPay',
-                    th: 'Estado de Pago',
+                    id: "statusPay",
+                    th: "Estado de Pago",
                     parse: (sell) => {
                         return parseStatusPay(sell?.statusPay);
                     },
                 },
                 {
-                    id: 'products',
-                    th: 'Productos',
+                    id: "products",
+                    th: "Productos",
                     isCollapse: true,
                     collapseProps: {
                         header: (
@@ -154,11 +154,11 @@ export const TableSell = ({ ...props }: TableSellProps) => {
                                 nItems={sell?.products?.length}
                                 extraHeader={[
                                     {
-                                        id: 'id',
-                                        th: 'Cantidad',
+                                        id: "id",
+                                        th: "Cantidad",
                                         parse: (product) => {
                                             return (
-                                                'x' +
+                                                "x" +
                                                 parseNumberCount(
                                                     (product as any)?.count,
                                                 )
@@ -171,15 +171,15 @@ export const TableSell = ({ ...props }: TableSellProps) => {
                     },
                 },
                 {
-                    id: 'createdAt',
-                    th: 'Fecha de Creacion',
+                    id: "createdAt",
+                    th: "Fecha de Creacion",
                     parse: (sell) => {
                         return parseDateTimeFormat_DD_MM_YY(sell?.createdAt);
                     },
                 },
                 {
-                    id: 'updatedAt',
-                    th: 'Fecha de Actualizacion',
+                    id: "updatedAt",
+                    th: "Fecha de Actualizacion",
                     parse: (sell) => {
                         return parseDateTimeFormat_DD_MM_YY(sell?.updatedAt);
                     },

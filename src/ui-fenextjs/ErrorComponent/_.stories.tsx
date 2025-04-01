@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { ErrorComponent, ErrorComponentProps } from "./index";
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<ErrorComponentProps>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : ErrorComponentProps = {
-    
-}
-Index.args = args
+const args: ErrorComponentProps = {};
+Index.args = args;

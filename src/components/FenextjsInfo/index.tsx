@@ -1,9 +1,9 @@
-import { Button } from '@/ui-fenextjs/Button';
-import { Img } from '@/ui-fenextjs/Img';
-import { Link } from '@/ui-fenextjs/Link';
-import { Text } from '@/ui-fenextjs/Text';
-import { Title } from '@/ui-fenextjs/Title';
-import React from 'react';
+import { Button } from "@/ui-fenextjs/Button";
+import { Img } from "@/ui-fenextjs/Img";
+import { Link } from "@/ui-fenextjs/Link";
+import { Text } from "@/ui-fenextjs/Text";
+import { Title } from "@/ui-fenextjs/Title";
+
 export interface FenextjsInfoProps {}
 
 export const FenextjsInfo = ({}: FenextjsInfoProps) => {
@@ -33,7 +33,7 @@ export const FenextjsInfo = ({}: FenextjsInfoProps) => {
                 <Text tag="strong" useT={false}>
                     <Text tag="strong">Contraseña</Text> : user1234
                 </Text>
-                <Link href={'https://fenextjs-doc.vercel.app'} target="_blank">
+                <Link href={"https://fenextjs-doc.vercel.app"} target="_blank">
                     <Button>Fenextjs Documentación</Button>
                 </Link>
             </div>

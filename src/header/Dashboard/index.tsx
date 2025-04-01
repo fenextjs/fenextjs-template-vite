@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { ChangeLang } from '@/components/ChangeLang';
-import { useUser } from '@/hook/useUser';
-import { Button } from '@/ui-fenextjs/Button';
-import { Img } from '@/ui-fenextjs/Img';
-import { Text } from '@/ui-fenextjs/Text';
-import { Title } from '@/ui-fenextjs/Title';
-import { User } from '@/ui-fenextjs/User';
-import { ButtonMenu, DropDown } from 'fenextjs';
+import { ChangeLang } from "@/components/ChangeLang";
+import { useUser } from "@/hook/useUser";
+import { Button } from "@/ui-fenextjs/Button";
+import { Img } from "@/ui-fenextjs/Img";
+import { Text } from "@/ui-fenextjs/Text";
+import { Title } from "@/ui-fenextjs/Title";
+import { User } from "@/ui-fenextjs/User";
+import { ButtonMenu, DropDown } from "fenextjs";
 
 export interface HeaderDashboardProps {}
 

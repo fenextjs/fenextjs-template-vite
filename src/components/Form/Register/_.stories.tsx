@@ -1,7 +1,7 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
-import { FormRegister,FormRegisterProps } from "./index";
+import { FormRegister, FormRegisterProps } from "./index";
 
 export default {
     title: "Component/Form/Register",
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<FormRegisterProps>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : FormRegisterProps = {
-    
-}
-Index.args = args
+const args: FormRegisterProps = {};
+Index.args = args;

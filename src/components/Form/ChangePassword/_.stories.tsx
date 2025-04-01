@@ -1,7 +1,7 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
-import { FormChangePassword,FormChangePasswordProps } from "./index";
+import { FormChangePassword, FormChangePasswordProps } from "./index";
 
 export default {
     title: "Component/Form/ChangePassword",
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<FormChangePasswordProps>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : FormChangePasswordProps = {
-    
-}
-Index.args = args
+const args: FormChangePasswordProps = {};
+Index.args = args;

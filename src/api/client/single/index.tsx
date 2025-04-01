@@ -1,5 +1,5 @@
-import { useRouter } from 'fenextjs';
-import { useQueryClient } from '../query';
+import { useRouter } from "fenextjs";
+import { useQueryClient } from "../query";
 
 export interface useSingleClientProps {}
 export const useSingleClient = ({}: useSingleClientProps) => {

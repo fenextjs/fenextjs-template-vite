@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { StoryFn, Meta } from "@storybook/react";
 
 import { InputText, InputTextProps } from "./index";
@@ -13,7 +13,5 @@ const Profile: StoryFn<PropsWithChildren<InputTextProps>> = (args) => (
 );
 
 export const Index = Profile.bind({});
-const args : InputTextProps = {
-    
-}
-Index.args = args
+const args: InputTextProps = {};
+Index.args = args;

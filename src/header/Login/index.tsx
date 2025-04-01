@@ -1,9 +1,9 @@
-import { ChangeLang } from '@/components/ChangeLang';
-import { Container } from '@/ui-fenextjs/Container';
-import { Img } from '@/ui-fenextjs/Img';
-import { Link } from '@/ui-fenextjs/Link';
-import { Title } from '@/ui-fenextjs/Title';
-import { URL } from '@/url';
+import { ChangeLang } from "@/components/ChangeLang";
+import { Container } from "@/ui-fenextjs/Container";
+import { Img } from "@/ui-fenextjs/Img";
+import { Link } from "@/ui-fenextjs/Link";
+import { Title } from "@/ui-fenextjs/Title";
+import { URL } from "@/url";
 
 export interface HeaderLoginProps {}
 

@@ -1,6 +1,6 @@
-import { IClient } from '../client';
-import { IProduct } from '../product';
-import { IStatus, IStatusPay } from '../status';
+import { IClient } from "../client";
+import { IProduct } from "../product";
+import { IStatus, IStatusPay } from "../status";
 
 export interface ISellProduct {
     product: IProduct;

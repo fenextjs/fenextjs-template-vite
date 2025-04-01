@@ -1,5 +1,5 @@
-import { FilterDate, FilterSearch } from 'fenextjs';
-import { ReactNode } from 'react';
+import { FilterDate, FilterSearch } from "fenextjs";
+import { ReactNode } from "react";
 
 export interface LayoutTableProps {
     top?: ReactNode;
