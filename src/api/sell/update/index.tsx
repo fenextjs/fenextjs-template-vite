@@ -1,3 +1,4 @@
+import { API_URL } from '@/env';
 import { IStatus } from '@/interface/status';
 import { IApiRespond, useApiMutation, useNotification } from 'fenextjs';
 
@@ -10,7 +11,7 @@ export interface useUpdateSellProps {}
 export const useUpdateSell = ({}: useUpdateSellProps) => {
     const { pop } = useNotification({});
     return useApiMutation<useUpdateSellInputProps, IApiRespond<unknown>>({
-        url: '/api/sell/update',
+        url: `${API_URL}/api/sell/update`,
         key: 'sell',
         options: {
             method: 'PATCH',

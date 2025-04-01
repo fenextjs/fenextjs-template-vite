@@ -1,3 +1,4 @@
+import { API_URL } from '@/env';
 import { IStatus } from '@/interface/status';
 import { IApiRespond, useApiMutation, useNotification } from 'fenextjs';
 
@@ -10,7 +11,7 @@ export interface useUpdateUserProps {}
 export const useUpdateUser = ({}: useUpdateUserProps) => {
     const { pop } = useNotification({});
     return useApiMutation<useUpdateUserInputProps, IApiRespond<unknown>>({
-        url: '/api/user/update',
+        url: `${API_URL}/api/user/update`,
         key: 'user',
         options: {
             method: 'PATCH',
